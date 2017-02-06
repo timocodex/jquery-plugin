@@ -4,20 +4,16 @@
     <title><%=title%></title>
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="app.js"></script>
+    <script src="lib/validate-email.js"></script>
     <script type="text/javascript">
     </script>
   </head>
   <body>
 
   <form action="action_page.php">
-    First name:<br>
-    <input type="text" name="firstname" value="Mickey">
-    <br><br>
-    <input type="submit" value="Submit">
+    email:<br>
+    <input id="target" type="text" name="firstname" value="Mickey">
   </form>
-
-  <p>If you click the "Submit" button, the form-data will be sent to a page called "action_page.php".</p>
 
   </body>
 </html>
