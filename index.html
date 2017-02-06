@@ -14,6 +14,15 @@
     email:<br>
     <input id="target" type="text" name="firstname" value="Mickey">
   </form>
-
+  <script type="text/javascript">
+    $( "#target" ).keyup(function() {
+      if($("#target").checkEmail()){
+        $(this).css('border-color',"green")
+      }
+      else{
+        $(this).css('border-color',"red")
+      }
+    });
+  </script>
   </body>
 </html>
